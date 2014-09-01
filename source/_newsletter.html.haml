@@ -1,0 +1,13 @@
+.container
+  .row
+    .span12
+      .thumbnail.center.well.well-small.text-center
+        %h2 Newsletter
+        %p Subscribe to our weekly Newsletter and stay tuned.
+        %form{:action => "", :method => "post"}
+          .input-prepend
+            %span.add-on
+              %i.icon-envelope
+            %input{:id => "", :name => "", :placeholder => "your@email.com", :type => "text"}
+          %br
+          %input.btn.btn-large{:type => "submit", :value => "Subscribe Now!"}
