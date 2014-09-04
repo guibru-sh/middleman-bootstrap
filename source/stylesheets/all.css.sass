@@ -1,5 +1,22 @@
-@import "variables"
+// @import "_variables"
 @import "bootstrap-sprockets"
 @import "bootstrap"
-@import "bootswatch"
-@import "carousel_quote"
+// @import "_bootswatch"
+@import "_carousel_quote"
+
+html,body
+  height: 100%
+
+
+#home
+  background: url(../images/logosite.png) #63BCE6 no-repeat center center fixed
+  display: table
+  height: 100%
+  position: relative
+  width: 100%
+  .row
+    .col-md-12
+      -webkit-background-size: cover
+      -moz-background-size: cover
+      -o-background-size: cover
+      background-size: cover
