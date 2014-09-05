@@ -19,3 +19,5 @@ group :development do
     gem 'guard'
     gem 'guard-livereload', require: false
 end
+
+gem "middleman-minify-html"
