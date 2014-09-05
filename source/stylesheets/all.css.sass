@@ -5,7 +5,7 @@
 @import "carousel_quote"
 // @import "bootstrap_vertical_grid"
 
-html,body
+html, body, .container
   height: 100%
 
 #contact
@@ -15,9 +15,9 @@ html,body
   background: #86C4AA
   color: #fff
 
-#logo
-  background: #5AA3C7
-  color: #fff
+// #logo
+//   background: #5AA3C7
+//   color: #fff
 
 #navbar
   background: #94E7FF
@@ -30,24 +30,37 @@ html,body
   .row
     margin: 40px 0
 
-// #logo
-//   background: url(../images/logosite.png) #63BCE6 no-repeat center center fixed
-//   // display: table
-//   height: 100%
-//   // position: relative
-//   width: 100%
-//   .row
-//     bottom: 20px
-//     position: absolute
-//     .col-md-12
-//       -webkit-background-size: cover
-//       -moz-background-size: cover
-//       -o-background-size: cover
-//       background-size: cover
-//       h2
-//         // display: inline-block
-//         vertical-align: bottom
-//         width: 100%
+#logo
+  background: url(../images/logosite.png) #63BCE6 no-repeat center center fixed
+  // display: table
+  height: 100%
+  // position: relative
+  width: 100%
+  .row
+    bottom: 20px
+    position: absolute
+    .col-md-12
+      -webkit-background-size: cover
+      -moz-background-size: cover
+      -o-background-size: cover
+      background-size: cover
+      h2
+        // display: inline-block
+        vertical-align: bottom
+        width: 100%
+      .scroll-down
+        cursor: pointer
+        position: absolute
+        bottom: 20px
+        color: #FFF
+        width: 100%
+        left: 0
+        right: 0
+        text-align: center
+        .text
+          font-weight: 300
+          font-size: 17px
+          padding: 0 0 15px
 //
 //
 // #contact

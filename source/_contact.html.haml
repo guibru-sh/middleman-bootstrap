@@ -1,27 +1,26 @@
-#contact.pane
-  .container
-    .row
-      .col-md-6.col-md-offset-3
-        .well.well-sm
-          %form.form-horizontal{:action => "", :method => "post", :enctype => "multipart/form-data", :name => "contact_form"}
-            %fieldset
-              %legend.text-center Contactez nous
-              / Name input
-              .form-group
-                %label.col-md-3.control-label{:for => "name"} Votre nom
-                .col-md-9
-                  %input#name.form-control{:name => "name", :placeholder => "Votre nom", :type => "text"}/
-              / Email input
-              .form-group
-                %label.col-md-3.control-label{:for => "email"} Votre E-mail
-                .col-md-9
-                  %input#email.form-control{:name => "email", :placeholder => "Votre E-mail", :type => "text"}/
-              / Message body
-              .form-group
-                %label.col-md-3.control-label{:for => "message"} Votre E-mail
-                .col-md-9
-                  %textarea#message.form-control{:name => "message", :placeholder => "S'il vous plait entrez votre message ici...", :rows => "5"}
-              / Form actions
-              .form-group
-                .col-md-12.text-right
-                  %button.btn.btn-primary.btn-lg{:type => "submit"} Envoyer
+.container
+  .row
+    .col-md-6.col-md-offset-3
+      .well.well-sm
+        %form.form-horizontal{:action => "", :method => "post", :enctype => "multipart/form-data", :name => "contact_form"}
+          %fieldset
+            %legend.text-center Contactez nous
+            / Name input
+            .form-group
+              %label.col-md-3.control-label{:for => "name"} Votre nom
+              .col-md-9
+                %input#name.form-control{:name => "name", :placeholder => "Votre nom", :type => "text"}/
+            / Email input
+            .form-group
+              %label.col-md-3.control-label{:for => "email"} Votre E-mail
+              .col-md-9
+                %input#email.form-control{:name => "email", :placeholder => "Votre E-mail", :type => "text"}/
+            / Message body
+            .form-group
+              %label.col-md-3.control-label{:for => "message"} Votre message
+              .col-md-9
+                %textarea#message.form-control{:name => "message", :placeholder => "S'il vous plait entrez votre message ici...", :rows => "5"}
+            / Form actions
+            .form-group
+              .col-md-12.text-right
+                %button.btn.btn-primary.btn-lg{:type => "submit"} Envoyer
