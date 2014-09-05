@@ -1,13 +1,9 @@
-jQuery.fn.extend({
-  scrollToFeatures: function(e) {
-    console.log('Hello');
-    if (e != null) {
-        e.preventDefault();
-    }
-    return $('html, body').animate({scrollTop: $("#features").offset().top - $('#navbar div').height()}, 2000);
-  }
+function scrollToFeatures() {
+  console.log('Hello');
+  return $('html, body').animate({scrollTop: $("#features").offset().top - $('#navbar div').height()}, 1000);
+}
 });
 
 $(document).ready(function () {
-  $(".scroll-down").on("click", $.scrollToFeatures);
+  $(".scroll-down").click(scrollToFeatures);
 });

@@ -28,7 +28,7 @@ html, body, .container
 .pane
   padding: 40px 0
   .row
-    margin: 40px 0
+    margin: 10px 0
 
 #logo
   background: url(../images/logosite.png) #63BCE6 no-repeat center center fixed
@@ -36,31 +36,40 @@ html, body, .container
   height: 100%
   // position: relative
   width: 100%
-  .row
-    bottom: 20px
-    position: absolute
-    .col-md-12
-      -webkit-background-size: cover
-      -moz-background-size: cover
-      -o-background-size: cover
-      background-size: cover
-      h2
-        // display: inline-block
-        vertical-align: bottom
+  .container
+    width: 100%
+    .row
+      bottom: 0px
+      position: absolute
+      width: 100%
+      .col-md-12
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
         width: 100%
-      .scroll-down
-        cursor: pointer
-        position: absolute
-        bottom: 20px
-        color: #FFF
-        width: 100%
-        left: 0
-        right: 0
-        text-align: center
-        .text
-          font-weight: 300
-          font-size: 17px
-          padding: 0 0 15px
+        h2
+          // display: inline-block
+          // vertical-align: bottom
+          width: 100%
+        .scroll-down
+          color: #1C3541
+          cursor: pointer
+          // position: absolute
+          // bottom: 20px
+          // left: 0
+          // right: 0
+          // text-align: center
+          .text
+            // font-weight: 300
+            // font-size: 17px
+            // padding: 0 0 15px
+          .arrow
+            background-image: url(../images/fleche.png)
+            background-size: 70px 30px
+            // display: inline-block
+            height: 30px
+            width: 70px
 //
 //
 // #contact
