@@ -9,6 +9,7 @@
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
     %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
-  %body
-    = partial "navbar"
+  %body{:data => {:spy => "scroll", :target => "#navbar"}}
+    #navbar
+      = partial "navbar"
     = yield
