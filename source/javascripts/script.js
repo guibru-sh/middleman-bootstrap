@@ -12,6 +12,7 @@ $(function () {
 $(document).ready(function () {
   $(".scroll-down").click(scrollToFeatures);
 
+});
 
 $(function () {
   var strength1 = 50;
