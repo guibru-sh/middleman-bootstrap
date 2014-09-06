@@ -34,13 +34,14 @@ html
     margin: 10px 0
 
 #logo
-  background: url(../images/logosite.png) #63BCE6 no-repeat center center fixed
   // display: table
   height: 100%
   // position: relative
   width: 100%
   .container
+    background: url(../images/logosite.png) no-repeat center center fixed
     width: 100%
+    z-index: 4
     .row
       bottom: 0px
       position: absolute
@@ -73,6 +74,24 @@ html
             // display: inline-block
             height: 30px
             width: 70px
+  div
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  #space
+    background: #1B3440
+  #background
+    z-index: 1
+    background: url(../images/little-stars.png)
+  #middleground
+    z-index: 2
+    background: url(../images/middle-stars.png)
+  #foreground
+    z-index: 3
+    background: url(../images/big-stars.png)
+
 //
 //
 // #contact

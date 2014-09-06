@@ -2,17 +2,22 @@
 title: Welcome to Middleman
 ---
 
-#logo.pane
-  = partial "logo"
-/ = partial "carousel_quote"
-/ = partial "video"
-#features.pane
-  = partial "features"
-#pricing.pane
-  = partial "pricing"
-/ #newsletter
-/   = partial "newsletter"
-/ = partial "billing"
-#contact.pane
-  = partial "contact"
-/ = partial "bitballoon_affiliate"
+%article
+  %section#logo
+    #space
+    #background
+    #middleground
+    #foreground
+    = partial "logo"
+  / = partial "carousel_quote"
+  / = partial "video"
+  %section#features.pane
+    = partial "features"
+  %section#pricing.pane
+    = partial "pricing"
+  / #newsletter
+  /   = partial "newsletter"
+  / = partial "billing"
+  %section#contact.pane
+    = partial "contact"
+  / = partial "bitballoon_affiliate"
