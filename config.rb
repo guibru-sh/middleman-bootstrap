@@ -60,6 +60,8 @@ configure :build do
   activate :minify_html
   activate :minify_javascript
 
+  # sprockets.append_path File.join root, 'bower_components'
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
